@@ -1,0 +1,19 @@
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="souligner">&nbsp;</td>
+    <td width="10%" align="center" class="souligner" style="color:red; font-weight:bold;">A</td>
+    <td width="10%" align="center" class="souligner" style="color:red; font-weight:bold;">S</td>
+    <td width="10%" align="center" class="souligner" style="color:red; font-weight:bold;">T</td>
+  </tr>
+  <{foreach item=infos from=$block.stats}>
+  <tr>
+    <td class="souligner"><{$infos.titre}></td>
+    <td align="center" class="souligner"><{if $infos.nb_j==0}><span style="color: #666666"><{/if}><{$infos.nb_j}><{if $infos.nb_j==0}></span><{/if}></td>
+    <td align="center" class="souligner"><{if $infos.nb_s==0}><span style="color: #666666"><{/if}><{$infos.nb_s}><{if $infos.nb_s==0}></span><{/if}></td>
+    <td align="center" class="souligner"><{if $infos.nb_t==0}><span style="color: #666666"><{/if}><{$infos.nb_t}><{if $infos.nb_t==0}></span><{/if}></td>
+  </tr>
+  <{/foreach}>
+  <tr>
+  	<td colspan="4"><span style="color:red; font-weight:bold;">A</span>ujourd'hui&nbsp;&nbsp;<span style="color:red; font-weight:bold;">S</span>emaine&nbsp;&nbsp;<span style="color:red; font-weight:bold;">T</span>otal</td>
+  </tr>
+</table>
